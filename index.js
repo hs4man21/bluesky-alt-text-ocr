@@ -179,7 +179,7 @@ async function pollApi() {
                 const anySucceeded = ocrs.map((ocr) => ocr.extracted).reduce((a, b) => a || b, false);
                 if (!anySucceeded) {
                     console.log(`Couldn't extract text from any images found`);
-                    return;
+                    continue;
                 }
                 let splitOcrs = ocrs.map((ocr) => ({
                     img: ocr.img,
