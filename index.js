@@ -47,7 +47,7 @@ const auxImageFontPixels = 100;
 function getAuxImage(imageNumber, totalImages, locale, num, totalAlts) {
     const canvas = createCanvas(auxImageEdgeLength, auxImageEdgeLength);
     const ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#AAAAAA';
     ctx.fillRect(0, 0, auxImageEdgeLength, auxImageEdgeLength);
     ctx.fillStyle = 'black';
     ctx.textAlign = 'right';
